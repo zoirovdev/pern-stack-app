@@ -54,7 +54,7 @@ const ProductPage = () => {
         Back to products
       </button>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Product Image */}
         <div className="rounded-lg overflow-hidden shadow-lg bg-base-100">
           <img src={currentProduct?.image} alt={currentProduct?.name} 
