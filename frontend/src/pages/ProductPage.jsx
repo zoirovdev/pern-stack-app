@@ -115,23 +115,23 @@ const ProductPage = () => {
                 </div>
 
                 {/* Form actions */}
-                <div className="flex justify-between mt-8">
+                <div className="flex justify-between mt-8 space-x-2">
                   <button type="button" 
-                    className="btn btn-error" onClick={() => handleDelete()}>
+                    className="btn btn-error w-[50%]" onClick={() => handleDelete()}>
                       <Trash2 className="size-4 mr-2"/>
-                      Delete product
+                      Delete 
                   </button>
 
                   <button 
                     type="submit"
-                    className="btn btn-primary"
+                    className="btn btn-primary w-[50%]"
                     disabled={loading || !formData.name || !formData.price || !formData.image }>
                       {loading ? (
                         <span className="loading loading-spinner loading-sm"/>
                       ) : (
                         <>
                           <Save className="size-4 mr-2"/>
-                          Save changes
+                          Save 
                         </>
                       )
                       }
